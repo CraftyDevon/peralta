@@ -1,0 +1,5 @@
+Thanks for taking the time to look over my submission, I hope you enjoy it! Make sure to check the source for a suprise!
+
+I decieded to use MeteorJS to create a CMS for this project after hearing that Blue Ion often implements custom content management solutions for their clients. However, due to issues with the recent 0.9 release, package dependencies are in flux and I'm awaiting updates from the meteor team and package creators to get deployment working again. In the mean time, you can view a version of the site without the cms or dynamic content [here.](http://peralta.meteor.com/)
+
+Behind the scenes, the site is powered by a mixture of technologies, including the MeteorJS Framework, Foundation 5, SASS, and a pinch of jquery for seasoning. Meteor itself is an interesting platform, allowing a bit more of a freeform approach verses MVC frameworks like Angular. The dev team still has some kinks to work out, and working with custom javascript is still a bit hasslesome in the system, mainly due to the way templates are built. But the barrier to entry is fairly low, and deployment is straightforward.
