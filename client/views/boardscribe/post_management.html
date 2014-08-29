@@ -2,23 +2,23 @@
   <div class="postmanagement">
 
 						
-							{{#if currentUser}}
+		{{#if currentUser}}
 							
-								<h4>Manage your content</h4>
+	 	<h4>Manage your content</h4>
 
 
-			      			{{> adminList}}
+		{{> adminList}}
 
 
-			      			 {{else}}
+		 {{else}}
 
-			      			  <h4>You need to login before you can edit content!</h4>
+		 <h4>You need to login before you can edit content!</h4>
 
-			      			  {{> loginButtons}}     
+		 {{> loginButtons}}     
 
 
 
-			      			 {{/if}}
+	        {{/if}}
 
 
   </div><!--end post Management-->
