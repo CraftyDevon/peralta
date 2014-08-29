@@ -1,0 +1,185 @@
+<template name="layout">
+
+
+
+  
+  <div class="container">
+
+
+  <div class="sidemarkers hide">
+    <a href="#sk8tnews" class="sk8tnews"><img src="images/sktnews.png"></a>
+        <a href="#skateboarders" class="skateboarders"><img src="images/skateboarders.png"></a>
+    <a href="#boarddesign" class="bd"><img src="images/boarddesign.png"></a>
+    <a href="#contact" class="ct"><img src="images/contactus.png"></a>
+
+
+
+  </div><!--end sidemarkers-->
+  {{> header}}
+  <div class="slideshow">
+
+      <ul class="example-orbit" data-orbit>
+  <li>
+    <img src="/images/slideshow/slide1.png" alt="slide 1" />
+   
+  </li>
+  <li class="active">
+    <img src="/images/slideshow/slide2.png" alt="slide 2" />
+   
+  </li>
+  <li>
+    <img src="/images/slideshow/slide3.png" alt="slide 3" />
+  
+  </li>
+</ul>
+      
+
+
+    </div><!--end slideshow-->
+
+   <div class="row">
+  <div id="sktnews"></div>
+
+
+      {{> postsList}}
+
+
+
+</div><!--end row-->
+
+
+<div class="row">
+
+    <div id="skateboarders">  </div>
+
+
+    {{> boarders}}
+
+  
+
+
+</div><!--end row-->
+
+
+
+
+<div class="row">
+
+  <div id="boarddesign"></div>
+
+
+  
+  <div class="boarddesign">   
+
+
+
+
+    <ul>
+      <span data-tooltip aria-haspopup="true" class="tip-bottom" title="Sporting an amazing king, skull, and inverted cross with a rad color, your friends are going to be green with envy at this deck. "><li><img src="/images/boards/1.png" alt=""></li></span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Who doesn't like elephants, and blue?"><li><img src="/images/boards/2.png" alt=""></li></span>
+
+    
+    <span data-tooltip aria-haspopup="true" class="tip-bottom" title="Isn't this script font deck off the hook?!"><li><img src="/images/boards/3.png" alt=""></li>  
+</span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="This custom Rob Dyrdek deck is a wee bit extraterstial!">    <li><img src="/images/boards/4.png" alt=""></li>  
+</span>
+
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Shecks, for life!">    <li><img src="/images/boards/5.png" alt=""></li>  
+
+</span>
+
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="This desk is gnarly, in many ways.">      <li><img src="/images/boards/6.png" alt=""></li>  
+</span>
+  <span data-tooltip aria-haspopup="true" class="tip-bottom" title="Ride the good mood rainow. Cool friends don't let friends skate sad.!"><li><img src="/images/boards/7.png" alt=""></li>  </span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Dialup tone not included!"><li><img src="/images/boards/8.png" alt=""></li>  </span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Moneky business meets awesome style in this deck!"><li><img src="/images/boards/9.png" alt=""></li>  </span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Panda, need we say more?"><li><img src="/images/boards/10.png" alt=""></li> </span>
+
+
+
+
+
+    </ul>
+    
+
+  </div><!--end board design-->
+
+
+</div><!--end row-->
+
+
+
+<div class="row">
+
+  <div id="contactus"></div>
+
+
+  <div class="contact">
+
+
+    <div class="medium-6 columns">
+
+      <div class="context">
+      
+      <h4>Contact Us</h4>
+      <p>Interested in learning more about Powell Peralta? Just shoot us a message and we'll get back to you in a jiffy! Make sure to check out our social media outlets in the meantime!</p>
+
+
+      <ul>
+        <li class="fbmini"><a href="#" ></a></li>
+        <li class="twittermini"><a href="" ></a></li>
+        <li class="rssmini"><a href="" ></a></li>
+        <li class="youtubemini"><a href=""></a></li>
+
+
+      </ul>
+
+      </div><!--end context-->
+
+    </div><!--end col-->
+    <div class="medium-6 columns">
+
+      <div class="conform">
+      
+      <form action="">
+        
+        <input type="text" id="name" placeholder="What's your name?">
+        <input type="email" id="email" placeholder="What's your email?">
+        <textarea name="" id="message" cols="30" rows="5" placeholder="What can we do for you?"></textarea>
+        <button id="submit" class="right">Submit</button>
+
+      </form>
+
+    </div><!--end con form-->
+
+    </div><!--end col-->
+
+
+  </div><!--end contact-->
+
+  
+
+</div><!--end row-->
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+</div><!--end container-->
+
+
+{{initFoundation}}
+
+
+
+
+</template>

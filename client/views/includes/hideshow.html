@@ -1,0 +1,106 @@
+<head>
+
+	<!--bringing in a script show our skateboarder bios-->
+	
+
+<script>
+
+Template.boarders.rendered = function() {
+	console.log("pick");
+
+
+
+
+	//looks chooser
+
+	var $lanceHolder = $(".lanceBio");
+	var $rodneyHolder = $(".rodneyBio");
+	var $tommyHolder = $(".tommyBio");
+	var $steveHolder = $(".steveBio");
+    
+
+	$(".lanceLink").click(function(){
+
+		console.log("Hu");
+
+		if($lanceHolder.hasClass("show")){
+			return;
+		} else{
+			$(".skateboarders").removeClass("show");
+
+			$(".skateboarders").addClass("hide");
+			$lanceHolder.addClass("show");
+
+
+			}
+
+
+
+
+	});
+
+	$(".rodneyLink").click(function(){
+
+		if($rodneyHolder.hasClass("show")){
+			return;
+		} else{
+									$(".skateboarders").removeClass("show");
+
+			$(".skateboarders").addClass("hide");
+			$rodneyHolder.addClass("show");
+
+		}
+
+
+	});
+
+	$(".tommyLink").click(function(){
+
+		if($tommyHolder.hasClass("show")){
+			return;
+		} else{
+									$(".skateboarders").removeClass("show");
+
+			$(".skateboarders").addClass("hide");
+			$tommyHolder.addClass("show");
+
+		}
+
+
+
+	});
+	
+	$(".steveLink").click(function(){
+		if($steveHolder.hasClass("show")){
+			return;
+		} else{
+									$(".skateboarders").removeClass("show");
+
+			$(".skateboarders").addClass("hide");
+			$steveHolder.addClass("show");
+
+		}
+
+
+
+	});
+
+
+	$(".boardreset").click(function(){
+
+	
+	$(".skaterbio").removeClass("show");
+	$(".skateboarders").addClass("show");
+
+
+
+
+	});
+
+};
+
+
+
+</script>
+
+</head>

@@ -1,0 +1,650 @@
+@import "packages/matthew:foundation5-sass/foundation";
+
+
+
+@mixin box-shad{
+   -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+}
+
+.show{
+	display: block;
+}
+
+$ppred: #b4282e !important;
+
+$hfstack: 20px/22px "proxima-nova", 'Helvetica', 'Arial' !important;
+
+$bfstack: 12px/14px "proxima-nova", 'Helvetica', 'Arial' !important;
+
+body { 
+  background: url(images/mainbg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #272822;
+}
+
+
+
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+.sidemarkers{
+	a{
+		position: relative;
+		display: block;
+		width: 276px;
+		height: 101px;
+		right: 300px;
+
+		
+
+	}
+
+	.sk8tnews{
+		top: 500px;
+		right: 300px;
+	}
+
+
+}
+
+
+.subscribe{
+	
+	ul{
+		margin: 10px 0 0 0;
+	}
+
+	li{
+		display: inline-block;
+		list-style: none;
+		width: 60px;
+		height: 60px;
+	}
+
+	a{
+		display: block;
+		width: 60px;
+		height: 60px;
+	}
+
+	a:hover{
+		border: 1px solid white;
+	}
+
+
+
+}
+
+.logo{
+	margin: 30px 0 0 0;
+}
+
+nav.main{
+
+	ul{
+	
+	margin: 40px 0 0 5px;
+
+	}
+
+	li{
+
+		display: inline-block;
+		width: 245px;
+		height: 40px;
+		background-color: #b4282e;
+
+
+	}
+
+
+
+	a{
+		color: white;
+		position: relative;
+		top: 8px;
+
+		letter-spacing: 1px;
+		display: block;
+		text-align: center;
+
+	}
+
+	li:hover{
+		background-color: white;
+
+		a{
+			color: #b4282e;
+		}
+	}
+
+}
+
+
+
+.slideshow{
+	position: relative;
+	top: 30px;
+	width: 100%;
+	height: 450px;
+
+
+	li{
+		border: 5px solid white;
+	}
+}
+
+.orbit-container{
+
+
+
+	.orbit-slide-number{
+		display: none;
+	}
+
+
+	.orbit-timer{
+		display: none;
+	}
+
+	.orbit-prev{display: none;}
+
+	.orbit-next{
+		display: none;
+	}
+}
+
+.orbit-bullets li.active{
+	background-color: $ppred !important;
+}
+
+.bloglisting{
+
+	margin: 0 0 0 10px;
+
+	.medium-4.columns{
+		padding: 0;
+	}
+	
+	.posttease{
+		width: 320px;
+		background-color: white;
+		height: 400px;
+		padding: 20px;
+
+	a.title{
+		color: $ppred;
+		font-size: 22px;
+		line-height: 26px;
+		text-transform: uppercase;
+	}
+
+	p{
+		font-family: $bfstack;
+		font-size: 14px;
+		padding: 20px 0 0 0;
+
+	}
+
+	a.readmore{
+		color: $ppred;
+		display: block;
+		text-align: center;
+
+		:hover{
+			text-decoration: underline;
+		}
+
+	}
+
+	a.edit{
+		color: $ppred;
+		display: block;
+		text-align: center;
+	}
+
+
+	}
+
+
+}
+
+
+
+.skateboarders{
+	margin: 50px 0 0 0;
+	width: 100%;
+	height: 400px;
+
+	.medium-12.columns{
+		padding: 0;
+	}
+
+	h2{
+		color: white;
+		padding: 100px 0 0 0;
+		text-align: center;
+		text-transform: uppercase;
+		  font-family: "azo-sans-web", 'Helvetica';
+		font-weight: 800;
+	}
+
+
+	.sb1{
+		position: relative;
+		right: 15px;
+		width: 318px;
+		height: 220px;
+		border: 4px solid white;
+		background: url(/images/boarders/lance.png);
+	}
+
+	.sb2{
+		position: relative;
+		left: 15px;
+		margin: 0 0 0 5px;
+		width: 318;
+		height: 220px;
+		border: 4px solid white;
+
+		background: url(/images/boarders/rodbull.png);
+		
+	}
+
+	.sb3{
+		width: 321px;
+		height: 461px;
+		border: 4px solid white;
+		background: url(/images/boarders/tommy.png);
+
+		h2{
+			padding: 300px 0 0 0;
+		}
+		
+	}
+
+	.sb4{
+		margin: 25px 0 0 0;
+	width: 667px;
+		height: 218px;
+		border: 4px solid white;
+		background: url(/images/boarders/stevecab.png);	
+
+	}
+}
+
+.skaterbio{
+	margin: 50px 0 0 0;
+	padding: 0 0 50px 0;
+	width: 100%;
+	min-height: 400px;
+	background-color: white;
+
+	h3{
+		padding: 30px 0 30px 0;
+		font-family: $hfstack;
+		color: $ppred;
+		font-size: 35px;
+
+		text-transform: uppercase;
+		text-align: center;
+
+	}
+
+	h4{
+		padding: 0 0 0 20px;
+		
+		font-family: $hfstack;
+		text-transform: uppercase;
+		color: $ppred;
+
+	}
+
+	p{
+		font-family: $bfstack;
+		padding: 20px 0 0 20px;
+	}
+
+	li{
+		list-style: none;
+	}
+
+	img{
+		width: 200px;
+		float: left;
+		display: inline-block;
+		margin: 2px;
+	}
+
+	a{
+		position: relative;
+		top: 20px;
+		text-align: center;
+		font-family: $bfstack;
+		color: $ppred;
+		display: block;
+		text-transform: uppercase;
+	}
+
+}
+
+
+.boarddesign{
+	margin: 50px 0 0 0;
+	width: 100%;
+	min-height: 350px;
+	background-color: white;
+	padding: 30px 0 0 30px;
+
+	ul{
+		margin: 0 0 0 15px;
+	}
+
+	li{
+		list-style: none;
+		display: inline-block;
+		padding: 12px;
+	}
+
+	img:hover{
+transform:translateY(-10px);
+	}
+
+	.tooltips{
+		background-color: red !important;
+	}
+
+
+}
+
+
+.contact{
+	margin: 50px 0 50px 0;
+	width: 100%;
+	padding: 0 0 30px 0;
+	min-height: 350px;
+	background-color: white;
+}
+
+.context{
+	margin: 30px 0 0 0;
+
+	h4{
+		font-family: "proxima-nova";
+		color: #b4282e;
+		text-transform: uppercase;
+		font-size: 25px;
+		letter-spacing: 1px;
+	}
+
+	p{
+		font-family: $bfstack;
+
+	}
+
+	ul{
+		margin: 0;
+	}
+
+	li{
+		height: 31px;
+		width: 30px;
+		list-style: none;
+		display: inline-block;
+	}
+
+
+	.fbmini{
+		background: url("/images/social/fbminic.jpg");
+		}
+
+	.fbmini:hover{
+		background: url("/images/social/fbminis.jpg");
+
+		}
+
+	.rssmini{
+		background: url("/images/social/rssminig.jpg");
+	}
+
+	.rssmini:hover{
+		background: url("/images/social/rssminic.jpg");
+	}
+
+	.twittermini{
+		background: url("/images/social/twitterminig.jpg");
+	}
+	.twittermini:hover{
+		background: url("/images/social/twitterminic.jpg");
+	}
+
+	.youtubemini{
+				background: url("/images/social/youtubeg.jpg");
+
+	}	
+
+	.youtubemini:hover{
+				background: url("/images/social/youtubec.jpg");
+
+	}
+}
+
+.conform{
+	margin: 30px 0 0 0;
+}
+
+#name, #email, #message{
+	@include box-shad; 
+}
+
+#submit{
+	background-color: #b4282e;
+	height: 40px;
+	width: 200px;
+	padding: 5px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+
+/*Blog Styles*/
+.singlepost{
+
+	width: 100%;
+	min-height: 500px;
+	margin: 50px 0 0 0;
+	padding: 0 0 30px 0;
+	background-color: white;
+
+	h3{
+		padding: 30px 0 0 20px;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+
+	p{
+		padding: 0 0 0 20px;
+		font-family: $bfstack;
+		width: 550px;
+		font-size: 14px;
+
+	}
+}
+
+.postheader{
+	width: 100%;
+	height: 40px;
+	background-color: $ppred;
+	
+	a{	display: block;
+		padding: 15px;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	
+}
+
+
+/*CMS STYLES*/
+
+.adlogo{
+
+	display: block;
+	margin: 30px auto 0 auto;
+	width: 250px;
+	
+}
+
+
+.admin{
+	width: 100%;
+	min-height: 500px;
+	background-color: white;
+	margin: 30px 0 0 0;
+
+
+
+}
+
+.admincontent{
+
+	h4{
+		margin: 50px 0 0 0 ;
+		font-family: $hfstack;
+		text-transform: uppercase;
+		color: $ppred;
+		text-align: center;
+	}
+
+	#login-buttons{
+		width: 300px;
+		display: block;
+		margin: 50px auto 50px auto;
+	}
+}
+
+
+
+footer.adm{
+	width: 100%;
+	height: 50px;
+	background-color: #f6f5e9;
+
+	p{
+		text-align: center;
+		padding: 15px 0;
+		font-weight: 300;
+	}
+}
+
+.titlebar{
+	width: 100%;
+	height: 50px;
+	background-color: $ppred;
+
+	h4{
+		color: white;
+		padding: 10px 0 0 20px;
+		letter-spacing: 1px;
+		font-family: $hfstack !important;
+
+	}
+}
+
+aside.admin{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+		background-color: #f6f5e9;
+
+		h4{
+			padding: 30px 0 0 10px;
+			color: $ppred;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+					font-family: $hfstack;
+
+		}
+
+		ul{
+			margin: 0 10px;
+		}
+
+		li{
+			list-style: none;
+			border-bottom: 1px solid white;
+			padding: 5px 0;
+
+
+		}
+
+		a{
+			padding: 0 0 0 10px;
+			color: $ppred;
+			font-family: $bfstack;
+			font-weight: 400;
+			font-size: 14px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+
+		p{
+			padding: 10px;
+			font-size: 14px;
+			font-weight: 300;
+			letter-spacing: 1px;
+					font-family: $bfstack;
+
+		}
+}
+
+.postmanagement{
+	h4{
+		padding: 30px 0 0 5px;
+
+	}
+
+	ul{
+		margin: 0;
+	}
+
+	li{
+		list-style: none;
+		padding: 5px;
+	}
+
+	li:nth-child(odd) {
+    background-color: #e2e2e2;  
+}
+}
+
+.submitpage{
+	width: 100%;
+	min-height: 400px;
+	padding: 50px;
+}
+
+
+.editPage{
+	width: 100%;
+	min-height:400px;
+	padding: 50px;
+	background-color: white;
+
+}
+
+
+

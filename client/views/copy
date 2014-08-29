@@ -1,0 +1,167 @@
+<head>
+  <title>powellPeralta</title>
+<meta name="viewport" content="width=device-width" />
+
+<script type="text/javascript" src="//use.typekit.net/mkh6uio.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+
+<body>
+	<div class="off-canvas-wrap">
+	<div class="inner-wrap">
+<a class="left-off-canvas-toggle">Right Menu</a>
+
+		<aside class="left-off-canvas-menu"><a href="#">Thing</a></aside>
+
+	<div class="container">
+  {{> header}}
+
+  	<div class="slideshow">
+
+  		<ul class="example-orbit" data-orbit>
+  <li>
+    <img src="/images/slideshow/slide1.png" alt="slide 1" />
+   
+  </li>
+  <li class="active">
+    <img src="/images/slideshow/slide2.png" alt="slide 2" />
+   
+  </li>
+  <li>
+    <img src="/images/slideshow/slide3.png" alt="slide 3" />
+  
+  </li>
+</ul>
+  		
+
+
+  	</div><!--end slideshow-->
+
+
+
+<div class="row">
+
+      {{> postsList}}
+
+
+</div><!--end row-->
+
+
+<div class="row">
+
+	  {{> boarders}}
+
+	
+	
+
+
+</div><!--end row-->
+
+
+
+
+<div class="row">
+
+	<div class="boarddesign">		
+
+
+
+
+		<ul>
+			<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!"><li><img src="/images/boards/1.png" alt=""></li></span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!"><li><img src="/images/boards/2.png" alt=""></li></span>
+
+		
+		<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!"><li><img src="/images/boards/3.png" alt=""></li>	
+</span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!">		<li><img src="/images/boards/4.png" alt=""></li>	
+</span>
+
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!">		<li><img src="/images/boards/5.png" alt=""></li>	
+
+</span>
+
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!">			<li><img src="/images/boards/6.png" alt=""></li>	
+</span>
+	<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!"><li><img src="/images/boards/7.png" alt=""></li>	</span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!"><li><img src="/images/boards/8.png" alt=""></li>	</span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!"><li><img src="/images/boards/9.png" alt=""></li>	</span>
+<span data-tooltip aria-haspopup="true" class="tip-bottom" title="Tooltips are awesome, you should totally use them!"><li><img src="/images/boards/10.png" alt=""></li>	</span>
+
+
+
+
+
+		</ul>
+		
+
+	</div><!--end board design-->
+	
+
+</div><!--end row-->
+
+
+
+<div class="row">
+
+	<div class="contact">
+
+
+		<div class="medium-6 columns">
+
+			<div class="context">
+			
+			<h4>Contact</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem, nam aut, obcaecati fugiat aliquam repellendus vero deleniti quaerat pariatur, atque culpa dignissimos odit, delectus! Quia itaque quod nesciunt ut!</p>
+
+			</div><!--end context-->
+
+		</div><!--end col-->
+		<div class="medium-6 columns">
+
+			<div class="conform">
+			
+			<form action="">
+				
+				<input type="text" id="name">
+				<input type="email" id="email">
+				<textarea name="" id="message" cols="30" rows="5"></textarea>
+				<button id="submit" class="right">Submit</button>
+
+			</form>
+
+		</div><!--end con form-->
+
+		</div><!--end col-->
+
+
+	</div><!--end contact-->
+	
+
+</div><!--end row-->
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="exit-off-canvas"></a>
+
+
+</div><!--end container-->
+
+</div><!--end innerwrap-->
+</div><!--end off canvas wrap-->
+
+{{initFoundation}}
+
+
+</body>
+

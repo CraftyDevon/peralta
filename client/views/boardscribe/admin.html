@@ -1,0 +1,97 @@
+<template name="admin">
+
+<!--establishing our container layout for the admit area-->
+
+	<div class="container">
+
+			<div class="adlogo"><a href="/"><img src="/images/logo.png"></a></div>
+
+
+		<div class="admin">
+			
+			<div class="titlebar"><h4>Boardscribe CMS</h4></div>
+
+			<div class="row">
+
+			
+
+				<div class="medium-4 columns">
+
+					<aside class="admin">
+
+						{{#if currentUser}}
+
+								
+								
+								<h4>What would you like to do?</h4>
+
+								  <nav>
+								  	<ul>
+								  		<li><a href="/postmanagement">See my posts</a></li>
+								  		<li><a href="/submit">Submit a new Post</a></li>
+								  		<li><a href="/" target="_blank">Visit the site</a></li>
+
+												{{#if currentUser}}
+
+														
+
+														{{> loginButtons}}     
+
+
+
+
+													{{/if}}								  		
+
+
+								  		
+								  	</ul>
+
+								  </nav>
+
+
+								  {{else}}
+
+								  <h4>Welcome to Boardscribe</h4>
+
+								<p>Boardscribe is the custom, in house content management solution for Powell Peralta's blog. Once you're inside you'll be able to see and edit all your current posts, as well as add new entries.</p>
+								<a href="/">GO HOME</a>
+						         {{/if}}
+
+
+
+					</aside>
+
+
+				</div><!--end col-->
+
+					<div class="medium-8 columns">
+
+					<div class="admincontent">
+
+				    {{> yield}}
+
+
+					</div><!--end admin content-->
+
+				
+				</div><!--end col-->
+
+
+
+
+			</div><!--end row-->
+
+
+
+
+		</div><!--end admin-->
+
+		<footer class="adm"><p>Need assistance? Just contact support at devon@devonhicks.com!</p></footer>
+
+
+
+
+</div><!--end container-->
+
+
+</template>

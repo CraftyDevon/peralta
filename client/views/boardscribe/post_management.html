@@ -1,0 +1,27 @@
+ <template name="postmanagement">
+  <div class="postmanagement">
+
+						
+							{{#if currentUser}}
+							
+											  	<h4>Manage your content</h4>
+
+
+			      			{{> adminList}}
+
+
+			      			 {{else}}
+
+			      			  <h4>You need to login before you can edit content!</h4>
+
+			      			  														{{> loginButtons}}     
+
+
+
+			      			 {{/if}}
+
+
+  </div><!--end post Management-->
+
+
+</template>

@@ -1,0 +1,39 @@
+<template name="postSubmit">
+
+    <div class="submitpage">
+
+    <h4>Create a new post</h4>
+
+  <form class="main">
+   
+
+    <div class="control-group">
+        <label class="control-label" for="title">Title</label>
+        <div class="controls">
+            <input name="title" type="text" value="" placeholder="Name your post"/>
+        </div>
+    </div>
+
+<div class="control-group">
+        <label class="control-label" for="teaser">Teaser</label>
+        <div class="controls">
+            <textarea name="teaser" type="text" value=""></textarea>
+        </div>
+    </div> 
+
+    <div class="control-group">
+        <label class="control-label" for="postcontent">Post Content</label>
+        <div class="controls">
+            <textarea name="postcontent" type="text" value=""></textarea>
+        </div>
+    </div> 
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+        </div>
+    </div>
+  </form>
+
+</div><!--end submit page-->
+</template>

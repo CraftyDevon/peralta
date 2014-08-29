@@ -1,0 +1,17 @@
+<template name="postItem">
+<div class="medium-4 columns"> 
+	<div class="posttease"> 
+		 <a href="{{pathFor 'postPage'}}" class="title">{{title}}</a>
+      
+
+      			<p>{{teaser}}</p>
+
+			<a href="{{pathFor 'postPage'}}" class="readmore">[Read More]</a>
+         <br>
+
+        {{#if ownPost}}<a href="{{pathFor 'postEdit'}}" class="edit">Edit</a>{{/if}}
+
+    </div>
+  </div>
+</template>
+

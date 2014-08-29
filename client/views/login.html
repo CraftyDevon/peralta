@@ -1,0 +1,20 @@
+<template name="login">
+  
+
+
+	{{#if currentUser}}
+
+	<h4>Welcome Blue Ion'ers!</h4>	
+
+	<p>Thanks for taking the time to look at my submission! To the left you can take a tour of Boarscribe and it's features. During this "sprint" it was my goal to get basic functionality and security in place, and I hope you enjoy what I've created. Please feel free to look for the comments in the code base for more details on how things work.</p>			
+
+
+	{{else}}
+
+		<h4>Sign-In or Sign-Up to continue</h4>
+
+		{{> loginButtons}}     
+
+	{{/if}}
+
+</template>

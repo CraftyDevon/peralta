@@ -1,0 +1,51 @@
+<template name="post">
+
+
+	
+	<div class="container">
+  {{> header}}
+
+		<div class="singlepost">
+
+			<div class="postheader clearfix">
+
+				<a class="left" href="/"> CLICK HERE TO GO HOME</a>
+
+				{{#if currentUser}}
+
+				<a class="right" href="/postmanagement">Go back to the content manager</a>
+
+								
+		
+								  {{else}}
+
+								  
+						         {{/if}}
+
+
+			</div><!--end post header-->
+
+			<h3>{{title}}</h3>
+
+			<p class="postcontent">{{postcontent}}</p>
+	
+		        {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+
+	
+
+		</div>
+
+
+		<footer id="main">
+			
+		</footer><!--end footer-->
+
+
+	
+</div><!--end container-->
+
+
+{{initFoundation}}
+
+
+	</template>
